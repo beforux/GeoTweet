@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>GeoTweet</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Welcome to GeoTweet!</h1>
+        <p class="lead">Enter a Word to Search!</p>
+      </div>
+
+    </div><!-- /.container -->
+    
+    <!-- search bar and button -->
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <form id="custom-search-form" class="form-search form-horizontal pull-right">
+            <div class="input-append span12">
+              <input type="text"  placeholder="Search" id="searchInput">
+              <button type="button" class="btn" id="searchButton"><i class="icon-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- map -->
+    <h2 id="h2"></h2>
+
+    <link rel="stylesheet" href="usgraph.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="./usgraph.js"></script>
+  </body>
+</html>
